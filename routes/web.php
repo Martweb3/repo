@@ -63,3 +63,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('users', 'UsersController');
+
+Route::post('edit/{id}','UsersUpdateController@edit') ;
